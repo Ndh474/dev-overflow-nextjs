@@ -23,7 +23,7 @@ export const SIDEBAR_LINKS = [
   },
   {
     imgURL: "/icons/tag.svg",
-    route: ROUTES.TAGS("1"),
+    route: ROUTES.TAGS(),
     label: "Tags",
   },
   {
