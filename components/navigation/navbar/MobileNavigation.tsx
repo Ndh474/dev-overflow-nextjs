@@ -44,10 +44,10 @@ const MobileNavigation = () => {
         <div className="no-scrollbar flex h-full flex-col justify-between overflow-y-auto">
           <SheetClose asChild>
             <section className="flex flex-col gap-6 pt-16">
-              <NavLinks />
+              <NavLinks isMobileNav={true} />
             </section>
           </SheetClose>
-          <div className="flex flex-col gap-3">
+          <div className="mt-5 flex flex-col gap-3">
             <SheetClose asChild>
               <Link href={ROUTES.SIGN_IN}>
                 <Button className="small-medium btn-secondary min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none">
