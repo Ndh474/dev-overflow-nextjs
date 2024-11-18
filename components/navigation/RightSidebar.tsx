@@ -27,8 +27,7 @@ const RightSidebar = () => {
       <div>
         <h3 className="h3-bold text-dark200_light900">Top Questions</h3>
         <div className="mt-7 flex w-full flex-col gap-[30px]">
-          {hotQuestions.map((question) => {
-            return (
+          {hotQuestions.map((question) => (
               <Link
                 key={question._id}
                 href={ROUTES.PROFILE(question._id)}
@@ -43,16 +42,14 @@ const RightSidebar = () => {
                   className="invert-colors"
                 />
               </Link>
-            );
-          })}
+          ))}
         </div>
       </div>
 
       <div className="mt-16">
         <h3 className="h3-bold text-dark200_light900">Popular Tags</h3>
         <div className="mt-7 flex flex-col gap-4">
-          {popularTags.map((tags) => {
-            return (
+          {popularTags.map((tags) => (
               <TagCard
                 key={tags._id}
                 _id={tags._id}
@@ -61,8 +58,7 @@ const RightSidebar = () => {
                 showCount
                 compact
               />
-            );
-          })}
+          ))}
         </div>
       </div>
     </section>
