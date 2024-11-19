@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import HomeFilter from "@/components/filters/HomeFilter";
 import LocalSearch from "@/components/search/LocalSearch";
 import { Button } from "@/components/ui/button";
 import ROUTES from "@/constants/routes";
@@ -58,7 +59,7 @@ const Home = async (props: { searchParams?: Promise<{ query?: string }> }) => {
       <section className="mt-11">
         <LocalSearch imgSrc={"/icons/search.svg"} placeholder="Search..." />
       </section>
-      HomeFilter
+      <HomeFilter />
       <div className="mt-10 flex w-full flex-col gap-6">
         {filterQuestions.map((question) => (
           <h1 key={question._id}>{question.title}</h1>
