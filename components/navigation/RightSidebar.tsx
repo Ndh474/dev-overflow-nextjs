@@ -28,20 +28,20 @@ const RightSidebar = () => {
         <h3 className="h3-bold text-dark200_light900">Top Questions</h3>
         <div className="mt-7 flex w-full flex-col gap-[30px]">
           {hotQuestions.map((question) => (
-              <Link
-                key={question._id}
-                href={ROUTES.PROFILE(question._id)}
-                className="flex cursor-pointer items-center justify-between gap-7"
-              >
-                <p>{question.title}</p>
-                <Image
-                  src={"/icons/chevron-right.svg"}
-                  alt="Chevron"
-                  width={20}
-                  height={20}
-                  className="invert-colors"
-                />
-              </Link>
+            <Link
+              key={question._id}
+              href={ROUTES.PROFILE(question._id)}
+              className="flex cursor-pointer items-center justify-between gap-7"
+            >
+              <p>{question.title}</p>
+              <Image
+                src={"/icons/chevron-right.svg"}
+                alt="Chevron"
+                width={20}
+                height={20}
+                className="invert-colors"
+              />
+            </Link>
           ))}
         </div>
       </div>
@@ -49,15 +49,8 @@ const RightSidebar = () => {
       <div className="mt-16">
         <h3 className="h3-bold text-dark200_light900">Popular Tags</h3>
         <div className="mt-7 flex flex-col gap-4">
-          {popularTags.map((tags) => (
-              <TagCard
-                key={tags._id}
-                _id={tags._id}
-                name={tags.name}
-                questions={tags.questions}
-                showCount
-                compact
-              />
+          {popularTags.map((tag) => (
+            <TagCard key={tag._id} tag={tag} showCount compact />
           ))}
         </div>
       </div>
