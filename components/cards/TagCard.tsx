@@ -9,7 +9,7 @@ import { Badge } from "../ui/badge";
 const TagCard = ({
   tag,
   showCount,
-  compact,
+  // compact,
 }: {
   tag: Tag;
   showCount?: boolean;

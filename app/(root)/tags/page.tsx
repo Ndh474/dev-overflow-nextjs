@@ -1,7 +1,7 @@
 import React from "react";
 
-const Page = () => {
-  return <div>Page</div>;
+const Tags = () => {
+  return <div>Tags</div>;
 };
 
-export default Page;
+export default Tags;

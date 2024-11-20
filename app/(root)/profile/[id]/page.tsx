@@ -1,7 +1,7 @@
 import React from "react";
 
-const Page = () => {
-  return <div>Page</div>;
+const Profile = () => {
+  return <div>Profile</div>;
 };
 
-export default Page;
+export default Profile;
